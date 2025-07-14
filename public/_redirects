@@ -1,0 +1,37 @@
+# Redirecciones para SPA (Single Page Application)
+# Esto es esencial para que React Router funcione correctamente en Netlify
+# Todas las rutas que no correspondan a archivos existentes se redirigen a index.html
+
+# Redirección principal para todas las rutas de la aplicación
+/*    /index.html   200
+
+# Redirecciones específicas para tus rutas (opcional, pero más explícito)
+/frontend    /index.html   200
+/backend     /index.html   200
+
+# Redirecciones para URLs con trailing slash
+/frontend/   /index.html   200
+/backend/    /index.html   200
+
+# Redirección para errores 404 - también van a la aplicación React
+/404         /index.html   200
+
+# Si tienes archivos estáticos que no deben ser redirigidos, puedes excluirlos:
+# /assets/*    /assets/:splat   200
+# /images/*    /images/:splat   200
+# /favicon.ico /favicon.ico    200
+
+# Redirecciones para APIs externas (ejemplo si necesitas proxy)
+# /api/*  https://tu-api-externa.com/api/:splat  200
+
+# Redirecciones de dominio (si cambias de dominio en el futuro)
+# https://old-domain.com/*  https://new-domain.com/:splat  301!
+
+# Redirecciones para versiones WWW
+# https://www.tu-dominio.com/*  https://tu-dominio.com/:splat  301!
+
+# Redirección de HTTP a HTTPS (automática en Netlify, pero puedes forzarla)
+# http://tu-dominio.com/*  https://tu-dominio.com/:splat  301!
+
+# Redirecciones temporales para mantenimiento (descomenta si necesitas)
+# /*  /maintenance.html  302

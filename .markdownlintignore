@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.git/
+.netlify/
+*.json
+*.js
+*.ts
+*.tsx
+*.css
+public/_redirects
+netlify.toml
