@@ -1,7 +1,6 @@
 import { Link, Outlet } from 'react-router-dom'
 import { navigation } from '../config/routes'
 import { useAppNavigation } from '../hooks/useAppNavigation'
-import Breadcrumb from './Breadcrumb'
 
 const Layout = () => {
     const { isCurrentPath, currentPath } = useAppNavigation()
@@ -31,8 +30,8 @@ const Layout = () => {
                                     key={item.path}
                                     to={item.path}
                                     className={`px-4 py-2 rounded-full font-medium transition-all duration-300 flex items-center space-x-2 ${isCurrentPath(item.path)
-                                            ? 'bg-white/20 text-white border border-white/30'
-                                            : 'text-white/70 hover:text-white hover:bg-white/10'
+                                        ? 'bg-white/20 text-white border border-white/30'
+                                        : 'text-white/70 hover:text-white hover:bg-white/10'
                                         }`}
                                 >
                                     <span>{item.icon}</span>
@@ -44,13 +43,8 @@ const Layout = () => {
                 </div>
             </header>
 
-            {/* Breadcrumb */}
-            <div className="pt-20">
-                <Breadcrumb />
-            </div>
-
             {/* Content */}
-            <main>
+            <main className="relative pt-20">
                 <Outlet />
             </main>
         </div>

@@ -2,8 +2,8 @@ import LiquidGlassVariations from '../components/LiquidGlassVariations'
 
 const Backend = () => {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
-            <div className="max-w-7xl mx-auto px-6 pb-8">
+        <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
+            <div className="max-w-7xl mx-auto px-6 py-8">
                 <div className="text-center mb-12">
                     <h1 className="text-5xl font-bold text-white mb-4">
                         Proyectos Backend
