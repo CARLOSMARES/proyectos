@@ -1,4 +1,3 @@
-import LiquidGlassVariations from '../components/LiquidGlassVariations'
 
 const Backend = () => {
     return (
@@ -12,8 +11,6 @@ const Backend = () => {
                         APIs, microservicios y arquitectura de servidor
                     </p>
                 </div>
-
-                <LiquidGlassVariations />
             </div>
         </div>
     )

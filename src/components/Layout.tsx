@@ -13,7 +13,7 @@ const Layout = () => {
     return (
         <div className="min-h-screen">
             {/* Navigation Header */}
-            <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/10 border-b border-white/20">
+            <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black border-b border-white/20">
                 <div className="max-w-7xl mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
                         <Link
@@ -44,7 +44,7 @@ const Layout = () => {
             </header>
 
             {/* Content */}
-            <main className="relative pt-20">
+            <main className="relative pt-19">
                 <Outlet />
             </main>
         </div>

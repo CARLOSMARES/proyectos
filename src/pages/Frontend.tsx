@@ -1,4 +1,3 @@
-import LiquidGlassDemo from '../components/LiquidGlassDemo'
 
 const Frontend = () => {
     return (
@@ -12,8 +11,6 @@ const Frontend = () => {
                         Interfaces de usuario modernas y responsivas
                     </p>
                 </div>
-
-                <LiquidGlassDemo />
             </div>
         </div>
     )
